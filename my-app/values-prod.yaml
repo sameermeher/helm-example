@@ -1,0 +1,16 @@
+namespace: prod
+replicaCount: 3
+
+clientID: "abcd-clientid-prod"
+keyVaultName: "abcd-keyvault-prod"
+tenantID: "abcd-tenantid"
+
+DB_HOST_KEY: DB_HOST
+
+image:
+  tag: v1.0.0 # use release version for production
+
+service:
+  type: ClusterIP
+
+environment: "prod"

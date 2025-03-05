@@ -1,0 +1,21 @@
+namespace: dev
+replicaCount: 1
+
+clientID: "abcd-clientid-dev"
+keyVaultName: "abcd-keyvault-dev"
+tenantID: "abcd-tenantid"
+
+DB_HOST_KEY: DB_HOST
+
+image:
+  repository: my-app-image
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+appName: my-app
+
+environment: "dev" # default environment

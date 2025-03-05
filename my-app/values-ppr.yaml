@@ -1,0 +1,16 @@
+namespace: ppr
+replicaCount: 2
+
+clientID: "abcd-clientid-ppr"
+keyVaultName: "abcd-keyvault-ppr"
+tenantID: "abcd-tenantid"
+
+DB_HOST_KEY: DB_HOST
+
+image:
+  tag: dev-latest
+
+service:
+  type: LoadBalancer # Use a LoadBalancer for development testing
+
+environment: "ppr"

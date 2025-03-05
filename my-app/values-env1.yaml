@@ -1,0 +1,12 @@
+namespace: dev
+
+image:
+  repository: my-app-image
+  tag: latest
+  pullPolicy: IfNotPresent
+
+DB_HOST_KEY: DB_HOST_ENV1
+
+service:
+  type: ClusterIP
+  port: 8080
